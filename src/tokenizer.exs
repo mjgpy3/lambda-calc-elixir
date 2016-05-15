@@ -23,7 +23,7 @@ defmodule Tokenizer do
 
   defp dotokenize([c | rest]) do
     if String.contains?("abcdefghijklmnopqrstuvwxyz", c) do
-      [{:name, c} | dotokenize(rest)]
+      [{:name, String.to_atom(c)} | dotokenize(rest)]
     else
       dotokenize(rest)
     end
