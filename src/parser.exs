@@ -38,23 +38,23 @@ defmodule Parser do
   end
 end
 
-IO.puts inspect(Parser.parse([{:name, "c"}]))
-IO.puts inspect(Parser.parse([
-  {:lambda, nil},
-  {:name, "x"},
-  {:dot, nil},
-  {:name, "x"},
-]))
-
-IO.puts inspect(Parser.parse([
-  {:lparen, nil},
-  {:lambda, nil},
-  {:name, "x"},
-  {:dot, nil},
-  {:name, "x"},
-  {:lambda, nil},
-  {:name, "y"},
-  {:dot, nil},
-  {:name, "y"},
-  {:rparen, nil},
-]))
+#IO.puts inspect(Parser.parse([{:name, "c"}]))
+#IO.puts inspect(Parser.parse([
+#  {:lambda, nil},
+#  {:name, "x"},
+#  {:dot, nil},
+#  {:name, "x"},
+#]))
+#
+#IO.puts inspect(Parser.parse([
+#  {:lparen, nil},
+#  {:lambda, nil},
+#  {:name, "x"},
+#  {:dot, nil},
+#  {:name, "x"},
+#  {:lambda, nil},
+#  {:name, "y"},
+#  {:dot, nil},
+#  {:name, "y"},
+#  {:rparen, nil},
+#]))
