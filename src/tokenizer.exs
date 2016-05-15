@@ -22,7 +22,7 @@ defmodule Tokenizer do
   end
 
   defp dotokenize([c | rest]) do
-    if String.contains?("abcdefghijklmnopqrstuvwxkz", c) do
+    if String.contains?("abcdefghijklmnopqrstuvwxyz", c) do
       [{:name, c} | dotokenize(rest)]
     else
       dotokenize(rest)
