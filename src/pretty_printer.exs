@@ -7,7 +7,7 @@ defmodule PrettyPrinter do
     Atom.to_string(ast[:value])
   end
 
-  def dopretty(:closure, ast) do
+  def dopretty(_, ast) do
     "\\#{ast[:arg]}.#{dopretty(ast[:body][:type], ast[:body])}"
   end
 end
