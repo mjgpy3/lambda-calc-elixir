@@ -1,0 +1,5 @@
+{
+  "exe": "elixir",
+  "main": "src/lambda_calc.exs",
+  "specVersion": 0
+}
